@@ -11,6 +11,6 @@ else:
             csvreader = csv.reader(csvfile)
             for row in csvreader:
                 try:
-                    print(row[0], int(math.log(int(row[2]),2)))
+                    print(f"{row[0]}/{int(math.log(int(row[2]),2))}")
                 except Exception:
                     pass
